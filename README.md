@@ -18,3 +18,12 @@ __Submission format:__ the xView3 challenge submission format required predictio
 * `vessel_length_m`: (float), estimated length of the vessel, in meters
 
 > source: https://iuu.xview.us/challenge
+
+
+
+## Getting Started
+
+* [Installation_doc](docs/01_Installation.md) instructions
+* [Dataset](docs/02_Dataset_Details.md) detail procedures for downloading and preparing the dataset
+* To start training [Quickstart.md](docs/03_Quickstart.md)
+* [Acknowledgements.md](docs/Acknowledgements.md)
