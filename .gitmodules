@@ -1,3 +1,9 @@
-[submodule "xview3-reference"]
-	path = xview3-reference
+[submodule "repos/xview3-reference"]
+	path = repos/xview3-reference
 	url = https://github.com/DIUx-xView/xview3-reference.git
+[submodule "repos/azureml_cv"]
+	path = repos/azureml_cv
+	url = https://github.com/naivelogic/azureml_cv.git
+[submodule "repos/yolact"]
+	path = repos/yolact
+	url = https://github.com/dbolya/yolact.git
