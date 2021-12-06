@@ -1,0 +1,32 @@
+# pip install -r requirements.txt
+
+# base ----------------------------------------
+Cython
+torch==1.7.0
+torchvision==0.8.0
+ninja
+yacs 
+matplotlib 
+tqdm 
+opencv-python 
+pandas 
+numpy 
+Pillow 
+imgaug 
+albumentations
+Shapely #1.7.1
+seaborn
+pillow
+pandas
+scipy
+ipywidgets
+pylint #vscode
+autopep8 #vscode
+argparse
+timm
+six
+tensorboardX
+tensorboard
+pycocotools
+#torch==1.8.1
+#torchvision==0.9.1
