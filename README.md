@@ -4,7 +4,7 @@ The goal of this project is to detect, classify and estimate the length of dark 
 
 Below is an example of xview validation detections from the initial yolact ship detector on a few images:
 
-<img src=docs/media/inference_590dd08f71056cacv_6_4.png height=200>
+<img src=docs/media/inference_590dd08f71056cacv_6_4.png>
 
 ## Solution description
 
@@ -12,7 +12,7 @@ Below is an example of xview validation detections from the initial yolact ship 
 
 _updated_: at the end of the xView3 challenge our submission was ranked in the top 50, rank 45. This was before xView3 removed the unverified submissions.
 
-* paper draft: `paper/Improve Illegal Ship Detection Using Pixel-Wise Mask.pdf`
+* paper draft: `Improve Illegal Ship Detection Using Pixel-Wise Mask.pdf`
 * presentation: `paper/xView3 Challenge Paper Summary Presentation.pdf`
 
 __Results__
@@ -73,12 +73,15 @@ Run `python datasets/ship_mask_utils/main.py`. This script will generate pixel m
 
 ### Training Dataset 
 
-The final training dataset consists of 44,383 training images and ~5,000 validation images. Each image is 200x200 pixel `.npy`. from the previous scripts ran in the `datasets/ship_mask_utils/` we utilize the coco_json annotation files that contains the file name and the labels. The categories for this challenge are broken into 3 ocmmen categories that are required to be classified: `fishing`, `non-fishing` and `other`. Below is a highlevel depiction of the training dataset class distribution. 
+The final training dataset consists of 44,383 training images and ~5,000 validation images. Each image is 200x200 pixel `.npy`. from the previous scripts ran in the `datasets/ship_mask_utils/` we utilize the coco_json annotation files that contains the file name and the labels. The categories for this challenge are broken into 3 ocmmen categories that are required to be classified: `fishing`, `non-fishing` and `other`. 
 
-|:----------:|:-------------|:-----------:|:-------------|:----------:|:-------------|
-|  fishing   | 12535        | non_fishing | 19408        |   other    | 14873        |
-|            |              |             |              |            |              |
-|   total    | 46816        |             |              |            |              |
+Below is a table for the training dataset and the instances distributed across the label categories. 
+
+| fishing | non_fishing | other | total |
+|---------|-------------|-------|-------|
+| 12535   | 19408       | 14873 | 46816 |
+
+
 
 ## Training
 
